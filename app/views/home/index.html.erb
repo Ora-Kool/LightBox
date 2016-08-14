@@ -1,51 +1,88 @@
+<% title "LightBox | Home" %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield(:title) %></title>
+</head>
+<body>
+
+
 <header class="navbar">
       <div class="container">
-
+          <div class="text-center">
         <nav>
-          <ul class="nav navbar-nav navbar-left">
-            <li><a href="#"> Find freelancers</a></li>
- 			<li><a href="#"> Find CVs</a></li>
- 			<li><a href="#"> <b>Employers / Post jobs</b></a></li>
+          <ul class="nav navbar-nav">
+            <li><a href="#"><b>Find Developers</b></a></li>
+ 			<li><a href="#"><b>Find Projects</b></a></li>
+ 			<li><a href="#"><b>Sign up</b></a></li>
 
           </ul>
            <nav>
           <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"> Sigin</span></a></li>
+          <li><a href="/login"><b>Log in</b></a></li>
+          <li><a href="/help"><b>Help</b></a></li>
+
           </ul>
           </nav>
         </nav>
+        </div>
         
       </div>
     </header>
-    <div class="jumbotron text-center" style="background: #5C6BC0">
-    	<h1><span class="glyphicon glyphicon-hourglass" style="color: white;">.......</span> coming soon....</h1>
-    	<h3>Njooh</h3>
+    <div class="jumbotron text-center">
+    	<h1>Welcome To </h1>
+    	<h3>LightBox</h3>
     	<a href="#" class="btn btn-primary">learn more</a>
+
     </div>
     <div class="container">
     
      <div class="row">
-     	<div class="col-lg-6 col-md-offset-6 ">
-     		<h2>Posting</h2>
-     		<%= image_tag('images1.png', alt: 'image', style: 'width: 100%; height: 200px;', class: 'img-thumnail')%>
-     		<p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the typographic appearence of European languages, as are digraphs not to be found in the original.</p>
+
+     	<div class="col-lg-4 drop-shadow">
+     		<h2>Java Developer</h2>
+     		<a href="#"><%= image_tag('images1.png', alt: 'image', style: 'width: 100%; height: 200px;', class: 'img-thumnail')%></a>
      	</div>
-     	<div class="col-lg-6">
-     		<h2>Posting</h2>
-     		<%= image_tag('images1.png', alt: 'image', style: 'width: 100%; height: 200px;', class: 'img-thumnail')%>
-     		<p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the typographic appearence of European languages, as are digraphs not to be found in the original.</p>
+
+     	<div class="col-lg-4 drop-shadow">
+     		<h2>PHP Developer</h2>
+     		<a href="#"><%= image_tag('image.png', alt: 'image', style: 'width: 100%; height: 200px;', class: 'img-thumnail')%></a>
      	</div>
-     	<div class="col-lg-6 col-md-offset-6">
-     		<h2>Posting</h2>
-     		<%= image_tag('drone.png', alt: 'image', style: 'width: 100%; height: 200px;', class: 'img-thumnail')%>
-     		<p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the typographic appearence of European languages, as are digraphs not to be found in the original.</p>
-     	</div>
-     	<div class="col-lg-6">
-     		<h2>Posting</h2>
-     		<span style="color: #303F9F; font-style: bold;"><p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the typographic appearence of European languages, as are digraphs not to be found in the original.</p></span>
-     	</div>
+     	
+      <div class="col-lg-4 drop-shadow">
+        <h2>PHP Developer</h2>
+        <a href="#"><%= image_tag('image.png', alt: 'image', style: 'width: 100%; height: 200px;', class: 'img-thumnail')%></a>
+      </div>
+
+      <div class="col-lg-4 drop-shadow">
+        <h2>PHP Developer</h2>
+        <a href="#"><%= image_tag('image.png', alt: 'image', style: 'width: 100%; height: 200px;', class: 'img-thumnail')%></a>
+      </div>
+
+      <div class="col-lg-4 drop-shadow">
+        <h2>PHP Developer</h2>
+        <a href="#"><%= image_tag('image.png', alt: 'image', style: 'width: 100%; height: 200px;', class: 'img-thumnail')%></a>
+      </div>
+
+      <div class="col-lg-4 drop-shadow">
+        <h2>PHP Developer</h2>
+        <a href="#"><%= image_tag('image.png', alt: 'image', style: 'width: 100%; height: 200px;', class: 'img-thumnail')%></a>
+      </div>
+
      </div>
     </div>
+
+    <footer class="text-center">
+    <ul class="list-inline">
+  		<li role="presentation" class="active"><a href="#">About Us</a></li>
+  		<li role="presentation" class="qctive"><a href="#">Find Us</a></li>
+  		<li><a href="#">Contact Us</a></li>
+  		
+	</ul>
+    </footer>
+
+    </body>
+    </html>
 
 
 

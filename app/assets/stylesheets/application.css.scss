@@ -15,3 +15,78 @@
  */
 	@import "bootstrap-sprockets";
 	@import "bootstrap";
+
+body{
+	background-color: #EEEEEE;
+	}
+	.col-lg-4{
+	margin-bottom: 10px;
+	}
+	.nav{
+		color: #acc;
+		box-shadow: 0 0 40px green;
+	}
+	.navbar{
+	background: white;
+	}
+
+	h2{
+	color: #000000;
+	}
+	footer{
+	background: #FFFFFF;
+	height: 100px;
+	}
+	.list-inline{
+	padding-top: 40px;
+	color: black;
+	font-size: 20px;
+	font-style: bold;
+	}
+	.list-inline > li > a{
+	color: black;
+
+	}
+	.list-inline > li > a:hover{
+	box-shadow: 0 0 40px green;
+	color: green;
+
+	}
+	.jumbotron{
+		background: url("lightbox.png") repeat;
+		height: 350px;
+		color: #FFFFFF;
+	}
+	img{
+	 box-shadow: 0 0 20px black;
+	}
+	a > img:hover{
+	 box-shadow: 0 0 40px green;
+	}
+
+.menu_simple ul {
+    margin: 0; 
+    padding: 0;
+    width: auto;
+    list-style-type: none;
+}
+
+.menu_simple ul li a {
+    text-decoration: none;
+    color: #F44336; 
+    padding: 14.5px 12px;
+    display: block;
+    font-size: 20px;
+    font-style: bold;
+}
+ 
+.menu_simple ul li a:visited {
+    color: #F44336;
+}
+ 
+.menu_simple ul li a:hover,
+ .menu_simple ul li .current {
+    color: #000000;
+    box-shadow: 0 0 40px green;
+    
+}
